@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Electron Boilerplate</title>
+  <link href="stylesheets/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+
+  <div class="container">
+    <h1 id="greet"></h1>
+    <p>
+      Welcome to <a href="http://electron.atom.io" class="js-external-link">Electron</a> app running on this magnificent <strong id="os"></strong> machine.
+    </p>
+    <p>
+      App author: <strong id="author"></strong>
+    </p>
+    <p>
+      Environment: <strong id="env"></strong>
+    </p>
+    <p>
+      Electron version: <strong id="electron-version"></strong>
+    </p>
+
+    <ul id="messages"></ul>
+    <form action="#" id="msg-form">
+      <label>Enter message</label>
+      <input type="text" name="lname" id="msg-box" size="40">
+      <label>Select file to send</label>
+      <input type="file" name="filename" id="msg-file" size="40">
+      <input type="submit" value="Submit">
+    </form>
+    <br />
+    <button id="private" disabled="true">Go private</button>
+    <span style="color: red;" id="upgrade-msg"></span>
+    <h2>Messages</h2>
+    <ul id="msg-list"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
